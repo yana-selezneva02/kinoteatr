@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <h3>Продажа билетов</h3>
+    <table>
+        <tr class="header">
+            <td><p>Название фильма</p></td>
+            <td><p>Время</p></td>
+            <td><p>Цена</p></td>
+            <td></td>
+        </tr>
+        @foreach (Cinema.Models.Film b in Model)
+        {
+            <tr>
+                <td><p>@b.Name</p></td>
+                <td><p>@b.Time</p></td>
+                <td><p>@b.Price</p></td>
+                <td><p><a href="/Home/Buy/@b.Id">Купить</a></p></td>
+            </tr>
+        }
+    </table>
+</div>

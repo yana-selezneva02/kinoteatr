@@ -1,0 +1,37 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <h3>Создание личного кабинета</h3>
+    <form method="post" action="">
+        <input type="hidden" value="@ViewBag.FilmId" name="FilmId" />
+        <table>
+            <tr>
+                <td><p>Введите свое имя </p></td>
+                <td><input type="text" name="Person" /> </td>
+            </tr>
+            <tr>
+                <td><p>Введите электронную почту </p></td>
+                <td>
+                    <input type="text" name="Email" />
+                </td>
+            </tr>
+            <tr>
+                <td><p>Введите телефон </p></td>
+                <td><input type="text" name="Phone" /> </td>
+            </tr>
+            <tr>
+                <td><p>Введите пароль </p></td>
+                <td><input type="text" name="Password" /> </td>
+            </tr>
+            <tr>
+                <td><p>Введите номер карты </p></td>
+                <td><input type="text" name="Card" /> </td>
+            </tr>
+            <tr><td><input type="submit" value="Создать" /> </td><td></td></tr>
+        </table>
+    </form>
+</div>
+
+   
